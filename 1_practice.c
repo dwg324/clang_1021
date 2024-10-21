@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main(){
+    int num;
+    scanf("%d",&num);
     int *p;
-    scanf("%d",p);
-    printf("%d...%d",&p/10,&p%10);
+    p=&num;
+    printf("%d...%d",*p/10,*p%10);
 }
